@@ -87,13 +87,13 @@ Add EbayApiBundle in your composer.json:
 ```js
 {
     "require": {
-       "webconsul/ebay-api-bundle": "dev-master"
+       "iBasit/EbayApiBundle": "dev-master"
     }
 }
 ```
 #### Step 2: Update composer
 ``` bash
-$ php composer.phar update webconsul/ebay-api-bundle
+$ php composer.phar update iBasit/EbayApiBundle
 ```
 ### Step 3: Enable the bundle
 
