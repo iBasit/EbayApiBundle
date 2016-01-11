@@ -84,7 +84,7 @@ class BaseCall
     }
 
     /**
-     * @desc response format getter
+     * desc response format getter
      * @author Valentin Ruskevych @ github.com/xbugster
      * @return string
      */
