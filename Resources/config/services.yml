@@ -7,19 +7,16 @@ parameters:
 
 services:
     web_consul_ebay_api.main:
-        class: %web_consul_ebay_api.main.class%
+        class: "%web_consul_ebay_api.main.class%"
         arguments:
-          parameters: %web_consul_ebay_api%
+          parameters: "%web_consul_ebay_api%"
     web_consul_ebay_api.make_call:
-        class: %web_consul_ebay_api.make_call.class%
+        class: "%web_consul_ebay_api.make_call.class%"
         arguments:
-          serializer: @jms_serializer
+          serializer: "@jms_serializer"
     web_consul_ebay_api.finding:
-        class: %web_consul_ebay_api.finding.class%
+        class: "%web_consul_ebay_api.finding.class%"
     web_consul_ebay_api.shopping:
-        class: %web_consul_ebay_api.shopping.class%
+        class: "%web_consul_ebay_api.shopping.class%"
     web_consul_ebay_api.trading:
-        class: %web_consul_ebay_api.trading.class%
-#        arguments:
-#         parameters: %web_consul_ebay_api%
-#       arguments: [@service_id, "plain_value", %parameter%]
+        class: "%web_consul_ebay_api.trading.class%"
