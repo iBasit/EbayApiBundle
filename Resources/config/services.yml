@@ -9,11 +9,11 @@ services:
     web_consul_ebay_api.main:
         class: "%web_consul_ebay_api.main.class%"
         arguments:
-          parameters: "%web_consul_ebay_api%"
+            - "%web_consul_ebay_api%"
     web_consul_ebay_api.make_call:
         class: "%web_consul_ebay_api.make_call.class%"
         arguments:
-          serializer: "@jms_serializer"
+            -  "@jms_serializer"
     web_consul_ebay_api.finding:
         class: "%web_consul_ebay_api.finding.class%"
     web_consul_ebay_api.shopping:
